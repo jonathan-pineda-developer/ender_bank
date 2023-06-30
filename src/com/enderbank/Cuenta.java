@@ -8,8 +8,9 @@ public class Cuenta {
 	int agencia;
 	int numero;
 	String titular;
-	double depositar(double valor) {
-		valor = saldo + valor;
-		return valor;
+	double depositar(double saldo) {
+		//diferencia entre un atributo y un parametro	
+		this.saldo += saldo;
+		return saldo;
 	}
 }
