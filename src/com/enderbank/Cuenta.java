@@ -8,4 +8,8 @@ public class Cuenta {
 	int agencia;
 	int numero;
 	String titular;
+	double depositar(double valor) {
+		valor = saldo + valor;
+		return valor;
+	}
 }
