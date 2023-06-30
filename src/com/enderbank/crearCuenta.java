@@ -12,9 +12,12 @@ public class crearCuenta {
 		cuenta.agencia = 1;
 		cuenta.numero = 1;
 		cuenta.titular = "Generic";
-		
-		
+		double retirar = 11;
 		System.out.println(cuenta.depositar(saldo));
+		System.out.println(cuenta.retirar(retirar));
+		retirar =1001;
+		System.out.println(cuenta.retirar(retirar));
+		
 		
 	}
 

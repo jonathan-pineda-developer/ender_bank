@@ -13,4 +13,15 @@ public class Cuenta {
 		this.saldo += saldo;
 		return saldo;
 	}
+	String retirar(double retiro) {
+	
+		if(this.saldo == 0 || this.saldo < retiro) {
+			return String.valueOf(-1 + " Saldo insuficiente");
+		}else {
+			retiro = this.saldo - retiro;
+			return retiro +" Saldo restante";
+			
+		}
+	
+	}
 }
